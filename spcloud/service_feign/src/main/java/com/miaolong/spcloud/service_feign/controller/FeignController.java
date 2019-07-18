@@ -14,6 +14,6 @@ public class FeignController {
     IService hiService;
     @RequestMapping(value = "/feignHi", method = RequestMethod.GET)
     public String hello(@RequestParam String name) {
-        return hiService.sayHi(name);
+        return hiService.sayHi("feign"+name);
     }
 }

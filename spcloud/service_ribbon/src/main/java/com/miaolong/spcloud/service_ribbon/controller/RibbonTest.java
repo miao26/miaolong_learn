@@ -15,7 +15,7 @@ public class RibbonTest {
     @RequestMapping(value = "/hi")
     @HystrixCommand(fallbackMethod = "hiError")
     public String hi(@RequestParam String name) {
-        return restTemplate.getForObject("http://EUREKA-CLIENT/hello?name="+name,String.class);
+        return restTemplate.getForObject("http://EUREKA-CLIENT/hello?name=ribbon"+name,String.class);
     }
 
     public String hiError(String name){

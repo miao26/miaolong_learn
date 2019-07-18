@@ -8,14 +8,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka_client" />
         <module name="eureka_server" />
+        <module name="service-zuul" />
         <module name="service_feign" />
         <module name="service_ribbon" />
         <module name="spcloud" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
       <module name="eureka_client" target="1.8" />
       <module name="eureka_server" target="1.8" />
+      <module name="service-zuul" target="1.8" />
       <module name="service_feign" target="1.8" />
       <module name="service_ribbon" target="1.8" />
       <module name="spcloud" target="1.8" />
